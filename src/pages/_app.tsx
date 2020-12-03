@@ -1,10 +1,13 @@
 import { AppProps } from 'next/app'
 import GlobalStyle from 'styles/global'
+import Layout from 'components/Layout'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
       <GlobalStyle />
     </>
   )
