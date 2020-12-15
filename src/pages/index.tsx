@@ -1,92 +1,65 @@
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
+const Banner = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(img/background.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #2c2d2f;
-  margin-left: 200px;
-  padding: 32px;
-`
-const PageHeading = styled.div`
-  margin-bottom: 50px;
-  margin-top: 50px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-  padding-bottom: 10px;
-`
-
-const Heading = styled.h2`
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  line-height: 1em;
-  text-transform: capitalize;
-  color: #00a3e1;
-  position: relative;
-  display: inline-block;
-`
-const SubHeadingContent = styled.div`
-  position: relative;
-  margin-bottom: 50px;
-  text-align: center;
-`
-const SubHeading = styled.h3`
-  border-color: #00a3e1 !important;
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1em;
-  letter-spacing: 0.5px;
-  position: relative;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  overflow-y: hidden !important;
+  box-sizing: border-box !important;
+  min-height: 100% !important;
   &::before {
-    left: 0;
-  }
-  &::after {
-    right: 0;
-  }
-  &::before,
-  &::after {
     position: absolute;
     content: '';
-    width: 2px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
+    background-color: #181818;
+    opacity: 0.5;
   }
 `
 
-const Content = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const BannerContent = styled.div`
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 `
-const ContentExperience = styled.div`
-  flex: 0 0 50%;
-  max-width: 50%;
-`
-const ContentEducation = styled.div`
-  flex: 0 0 50%;
-  max-width: 50%;
+
+const Heading = styled.h1`
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 62px;
+  font-weight: 500;
+  color: #fff;
+  > span {
+    color: #00a3e1;
+  }
 `
 
 const Home: React.FC = () => {
   return (
-    <Wrapper>
-      <PageHeading>
-        <Heading>My resume.</Heading>
-      </PageHeading>
-      <Content>
-        <ContentExperience>
-          <SubHeadingContent>
-            <SubHeading>Experience</SubHeading>
-          </SubHeadingContent>
-        </ContentExperience>
-        <ContentEducation>
-          <SubHeadingContent>
-            <SubHeading>Education</SubHeading>
-          </SubHeadingContent>
-        </ContentEducation>
-      </Content>
-    </Wrapper>
+    <Banner>
+      <BannerContent>
+        <Heading>
+          Abraão <span>Duarte</span>
+        </Heading>
+      </BannerContent>
+    </Banner>
   )
 }
 
