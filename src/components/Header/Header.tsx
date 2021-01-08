@@ -34,7 +34,7 @@ const Header = (): React.ReactElement => {
             </Link>
           </S.MenuItem>
           <S.MenuItem>
-            <Link href="/">
+            <Link href="/about">
               <S.Anchor>
                 <S.UserIcon />
                 <span>About me</span>
@@ -42,7 +42,7 @@ const Header = (): React.ReactElement => {
             </Link>
           </S.MenuItem>
           <S.MenuItem>
-            <Link href="/">
+            <Link href="/resume">
               <S.Anchor>
                 <S.ResumeIcon />
                 <span>Resume</span>
@@ -50,7 +50,7 @@ const Header = (): React.ReactElement => {
             </Link>
           </S.MenuItem>
           <S.MenuItem>
-            <Link href="/">
+            <Link href="/contact">
               <S.Anchor>
                 <S.ContactIcon />
                 <span>Contact</span>
