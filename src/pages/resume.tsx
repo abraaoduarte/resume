@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import PageHeader from 'components/PageHeader'
+import { AddressCard } from 'styles/Icons'
 
 const Wrapper = styled.div`
   background-color: #2c2d2f;
@@ -174,9 +176,7 @@ const YearInfo = styled.span`
 const Home: React.FC = () => {
   return (
     <Wrapper>
-      <PageHeading>
-        <Heading>My resume.</Heading>
-      </PageHeading>
+      <PageHeader title="My Resume." icon={<AddressCard />} />
       <Content>
         <ContentExperience>
           <SubHeadingContent>

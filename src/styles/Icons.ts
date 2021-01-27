@@ -12,3 +12,5 @@ export {
   Github,
   Twitter
 } from '@styled-icons/boxicons-logos'
+
+export { AddressCard } from '@styled-icons/fa-regular'
