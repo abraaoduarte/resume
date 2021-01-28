@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Person } from 'styles/Icons'
+import PageHeader from 'components/PageHeader'
 
 const Wrapper = styled.div`
   background-color: #2c2d2f;
@@ -142,9 +144,7 @@ const Item = styled.div`
 const About: React.FC = () => {
   return (
     <Wrapper>
-      <PageHeading>
-        <Heading>About me.</Heading>
-      </PageHeading>
+      <PageHeader title="About me." icon={<Person />} />
       <Content>
         <ContentExperience>
           <Title>Software Developer</Title>

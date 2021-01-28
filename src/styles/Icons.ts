@@ -14,3 +14,4 @@ export {
 } from '@styled-icons/boxicons-logos'
 
 export { AddressCard } from '@styled-icons/fa-regular'
+export { Person } from 'styled-icons/bootstrap'

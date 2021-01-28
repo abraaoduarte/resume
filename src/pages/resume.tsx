@@ -9,23 +9,7 @@ const Wrapper = styled.div`
     margin-left: 200px;
   }
 `
-const PageHeading = styled.div`
-  margin-bottom: 50px;
-  margin-top: 50px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-  padding-bottom: 10px;
-`
 
-const Heading = styled.h2`
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  line-height: 1em;
-  text-transform: capitalize;
-  color: #00a3e1;
-  position: relative;
-  display: inline-block;
-`
 const SubHeadingContent = styled.div`
   position: relative;
   margin-bottom: 50px;

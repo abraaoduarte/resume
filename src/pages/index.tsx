@@ -58,6 +58,7 @@ const Home: React.FC = () => {
         <Heading>
           Abraão <span>Duarte</span>
         </Heading>
+        <span>I am christian and work with development</span>
       </BannerContent>
     </Banner>
   )
