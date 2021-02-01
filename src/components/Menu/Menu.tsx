@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import * as S from './Header.styles'
+import * as S from './Menu.styles'
 
 const Header = (): React.ReactElement => {
   const [isOpen, setOpen] = useState(false)
