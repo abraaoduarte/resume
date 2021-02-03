@@ -1,111 +1,65 @@
 import styled, { css } from 'styled-components'
 import {
-  Menu as MenuHamburguerIcon,
   Home,
   PersonOutline,
-  ListAlt,
+  FileUser,
   ContactMail,
-  FacebookSquare,
   Twitter,
   Github,
-  Instagram
+  Instagram,
+  Article,
+  LinkedinSquare
 } from 'styles/Icons'
+import media from 'styled-media-query'
+import { SimpeBar } from './simplebar'
 
-export const Header = styled.header`
-  background-color: #17181b;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-`
+type NavigationProps = {
+  isOpen: boolean
+}
 
-export const Content = styled.div`
-  width: 100%;
-  position: relative;
-  height: 50px;
-  text-align: right;
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-`
+const NavigationModifiers = {
+  openMenu: () => css`
+    left: 0;
+  `
+}
 
-const iconCSS = css`
-  width: 20px;
-  height: 20px;
-`
-
-export const MenuIcon = styled(MenuHamburguerIcon)`
-  ${iconCSS}
-`
-
-export const Name = styled.h2`
-  /** TODO: Use REM */
-  position: absolute;
-  transform: translateX(-50%);
-  display: inline-block;
-  left: 50%;
-  text-align: center;
-  font-size: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  line-height: 50px;
-  white-space: nowrap;
-  font-weight: 500;
-`
-
-export const MenuButton = styled.button`
-  color: white;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  text-align: center;
-  border: none;
-  border-left: 1px solid #3b3c43;
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-`
-
-export const MenuContent = styled.div<{ isOpen: boolean }>`
-  position: absolute;
-  z-index: 2;
-  width: 200px;
-  top: 0;
-  background-color: #17181b;
-  transform: ${({ isOpen }) =>
-    isOpen ? 'translateX(0)' : 'translateX(-100%)'};
-  height: 100vh;
-  text-align: left;
-  position: absolute;
-  transition: transform 0.3s ease-in-out;
-  @media screen and (min-width: 767px) {
-    transform: translateX(0);
+export const Navigation = styled.nav<NavigationProps>`
+  ${({ theme, isOpen }) => css`
     position: fixed;
-  }
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: ${theme.pallete.dark.main};
+    text-align: center;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    left: -220px;
+    ${!!isOpen && NavigationModifiers.openMenu()};
+    ${media.greaterThan('medium')`
+      left: 0;
+    `}
+  `}
+  overflow-y: hidden;
+  ${SimpeBar}
 `
 
-export const ContentImage = styled.div`
+export const ContentNavigation = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`
+
+export const ImageContainer = styled.div`
   position: relative;
-  width: 200px;
+  width: 100%;
   height: 200px;
 `
 
-export const MyName = styled.h2`
-  font-family: 'Playfair Display', serif;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  padding: 10px 0;
-  font-weight: 700;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
+export const TextInsideMenu = styled.h2`
+  display: none;
+  font-size: ${({ theme }) => theme.typography.sizes.large};
   &::before {
-    background-color: #00a3e1;
+    background-color: ${({ theme }) => theme.pallete.primary.main};
     content: '';
     position: absolute;
     top: 0;
@@ -114,22 +68,58 @@ export const MyName = styled.h2`
     height: 100%;
     opacity: 0.8;
     z-index: -1;
+    font-family: ${({ theme }) => theme.typography.titleFont.fontFamily};
   }
+  ${media.greaterThan('medium')`
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 0;
+      text-transform: uppercase;
+      text-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+      z-index: 1;
+  `}
 `
 
 export const Menu = styled.ul`
-  display: flex;
-  flex-direction: column;
+  flex: 3;
+  list-style: none;
 `
 export const MenuItem = styled.li`
-  padding: 10px 0 10px 50px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #202226;
+  ${({ theme }) => css`
+    font-size: ${theme.typography.sizes.small};
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid ${theme.pallete.dark.light};
+    text-align: left;
+  `}
+`
+export const MenuLink = styled.a`
+  display: block;
+  padding: calc(${({ theme }) => theme.spacing.small} + 2px);
+  color: ${({ theme }) => theme.pallete.primary.dark};
   text-align: left;
+  padding-left: 40px;
+  &:active,
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.pallete.primary.light};
+  }
+`
+export const MenuText = styled.span`
+  margin-left: ${({ theme }) => theme.spacing.small};
+  line-height: ${({ theme }) => theme.typography.sizes.small};
+  vertical-align: middle;
 `
 
+const iconCSS = css`
+  width: 20px;
+  height: 20px;
+`
 export const HomeIcon = styled(Home)`
   ${iconCSS}
 `
@@ -138,7 +128,7 @@ export const UserIcon = styled(PersonOutline)`
   ${iconCSS}
 `
 
-export const ResumeIcon = styled(ListAlt)`
+export const ResumeIcon = styled(FileUser)`
   ${iconCSS}
 `
 
@@ -146,7 +136,32 @@ export const ContactIcon = styled(ContactMail)`
   ${iconCSS}
 `
 
-export const FacebookIcon = styled(FacebookSquare)`
+export const BlogIcon = styled(Article)`
+  ${iconCSS}
+`
+
+export const ContentSocialMedia = styled.div`
+  padding: ${({ theme }) => theme.spacing.medium} 0;
+`
+export const SocialMedia = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: ${({ theme }) => theme.spacing.xxxlarge};
+  margin-bottom: ${({ theme }) => theme.spacing.large};
+`
+export const SocialMediaItem = styled.li``
+export const SocialMediaLink = styled.a`
+  color: ${({ theme }) => theme.pallete.primary.dark};
+  &:hover,
+  &:active {
+    cursor: pointer;
+    color: ${({ theme }) => theme.pallete.primary.light};
+  }
+`
+
+export const LinkedinIcon = styled(LinkedinSquare)`
   ${iconCSS}
 `
 
@@ -162,38 +177,9 @@ export const InstagramIcon = styled(Instagram)`
   ${iconCSS}
 `
 
-export const Anchor = styled.a`
-  cursor: pointer;
-  & span {
-    position: relative;
-    margin-left: 10px;
-    top: 2px;
-  }
-  color: #777;
-  &:hover {
-    color: #fff;
-  }
-`
-
-export const FooterMenu = styled.div`
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding-bottom: 15px;
-`
-export const SocialMedia = styled.ul`
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  width: 130px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-`
-export const SocialMediaItem = styled.li``
-
 export const Copyright = styled.p`
-  font-size: 12px;
-  color: #777;
+  font-size: ${({ theme }) => theme.typography.sizes.small};
+  color: ${({ theme }) => theme.pallete.primary.dark};
   text-align: center;
   line-height: 1.65;
 `

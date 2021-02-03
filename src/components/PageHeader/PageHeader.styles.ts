@@ -8,7 +8,6 @@ export const Content = styled.div`
     border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
     padding-bottom: ${theme.spacing.small};
     display: flex;
-    margin-top: 100px;
     h2 {
       flex: 1;
     }

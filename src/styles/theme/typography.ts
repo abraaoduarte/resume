@@ -27,7 +27,9 @@ export const typography = {
     normal: pixelToRem(14),
     medium: pixelToRem(16),
     large: pixelToRem(18),
-    xlarge: pixelToRem(24)
+    xlarge: pixelToRem(20),
+    xxlarge: pixelToRem(22),
+    xxxlarge: pixelToRem(24)
   }
 }
 

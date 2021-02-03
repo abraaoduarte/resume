@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 
 export const SubHeading = styled.h3`
-  border-color: #00a3e1 !important;
   display: inline-block;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: ${({ theme }) => theme.typography.sizes.xxlarge};
+  font-weight: ${({ theme }) => theme.typography.titleFont.semiBold};
+  font-family: ${({ theme }) => theme.typography.titleFont.fontFamily};
+  border-color: ${({ theme }) => theme.pallete.primary.main};
   line-height: 1em;
   letter-spacing: 0.5px;
   position: relative;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid ${({ theme }) => theme.pallete.primary.main};
   text-align: center;
   &::before {
     left: 0;
@@ -24,7 +25,7 @@ export const SubHeading = styled.h3`
     content: '';
     width: 2px;
     height: 5px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: ${({ theme }) => theme.pallete.primary.main};
     bottom: 0;
   }
 `

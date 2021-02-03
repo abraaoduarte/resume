@@ -1,7 +1,8 @@
 const pallete = {
   primary: {
     light: '#ffffff',
-    main: '#00a3e1'
+    main: '#00a3e1',
+    dark: '#777777'
   },
   dark: {
     light: '#2c2d2f',
