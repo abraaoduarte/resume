@@ -12,16 +12,26 @@ const About: React.FC = () => {
         <S.MainContent>
           <S.Title>Software Developer</S.Title>
           <S.Text>
-            Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur
-            dolor nisi labore commodi ipsa? Excepturi velit laboriosam at
-            voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat
-            placeat quas consequatur? Obcaecati natus rerum
+            My name is Abraão I currently live in Franca / SP in Brazil, I am a
+            fullstack developer and I currently work for Editora Globo that is
+            part of the Globo group, but I have worked in other companies.
           </S.Text>
           <S.Text>
-            Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur
-            dolor nisi labore commodi ipsa? Excepturi velit laboriosam at
-            voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat
-            placeat quas consequatur? Obcaecati natus rerum
+            In the last few years I participated in the construction of several
+            projects, working as a backend, frontend and also acting in the
+            final delivery of the project to the client, hosting applications on
+            AWS and other platforms.
+          </S.Text>
+          <S.Text>
+            My main stack today is Javascript (Node, Reactjs, Nextjs), but I
+            have already worked with PHP and a little with python, I have
+            knowledge of MySql, Postgres and MongoDB databases.
+          </S.Text>
+          <S.Text>
+            I really like to program, and I&apos;m always studying and trying to
+            apply the new things I learn to projects. My goal has always been to
+            participate in the digital transformation in the companies where I
+            worked and where I currently work.
           </S.Text>
         </S.MainContent>
         <S.PersonalInfoContent>
@@ -54,7 +64,37 @@ const About: React.FC = () => {
           </S.PersonalInfoList>
           <S.ButtonDownload>DOWNLOAD RESUME</S.ButtonDownload>
         </S.PersonalInfoContent>
-        <SubHeading title="SERVICES" />
+        <S.SubHeadingContent>
+          <SubHeading title="SERVICES" />
+        </S.SubHeadingContent>
+        <S.SectionContent>
+          <S.CardServices>
+            <S.FrontEndIcon />
+            <S.CardServiceTitle>Frontend</S.CardServiceTitle>
+            <S.CardServiceText>
+              I develop frontend applications, from creating the layout with
+              HTML and CSS to integrating with the backend communicating via
+              API.
+            </S.CardServiceText>
+          </S.CardServices>
+          <S.CardServices>
+            <S.BackendIcon />
+            <S.CardServiceTitle>Backend</S.CardServiceTitle>
+            <S.CardServiceText>
+              I develop backend applications, and the whole process that it
+              involves, such as integration with databases or external services,
+              creation of routines and much more.
+            </S.CardServiceText>
+          </S.CardServices>
+          <S.CardServices>
+            <S.CloudIcon />
+            <S.CardServiceTitle>Deploy</S.CardServiceTitle>
+            <S.CardServiceText>
+              I do the job of hosting application in the cloud through services
+              like AWS, Google Cloud and other platforms.
+            </S.CardServiceText>
+          </S.CardServices>
+        </S.SectionContent>
       </S.Container>
     </Base>
   )

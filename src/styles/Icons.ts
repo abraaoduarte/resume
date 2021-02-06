@@ -1,4 +1,4 @@
-export { Menu } from '@styled-icons/boxicons-regular'
+export { Menu, Cloud, CodeCurly } from '@styled-icons/boxicons-regular'
 export {
   Home,
   PersonOutline,
@@ -16,3 +16,5 @@ export {
 } from '@styled-icons/boxicons-logos'
 export { Person } from '@styled-icons/ionicons-outline'
 export { AddressCard } from '@styled-icons/fa-regular'
+export { LaptopCode } from '@styled-icons/fa-solid'
+export { CodeSquare } from '@styled-icons/bootstrap'

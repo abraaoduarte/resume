@@ -1,5 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
+import { LaptopCode, Cloud, CodeCurly } from 'styles/Icons'
 
 export const Title = styled.h3`
   ${({ theme }) => css`
@@ -24,11 +25,13 @@ export const Container = styled.div`
 `
 export const MainContent = styled.div`
   flex-basis: 100%;
+  text-align: left;
   ${media.greaterThan('medium')`
     flex-basis: 65%;
   `}
 `
 export const PersonalInfoContent = styled.div`
+  text-align: left;
   flex-basis: 100%;
   ${media.greaterThan('medium')`
     flex-basis: 35%;
@@ -111,4 +114,59 @@ export const ButtonDownload = styled.button`
       }
     }
   `}
+`
+
+export const SectionContent = styled.div`
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: ${({ theme }) => theme.spacing.large};
+`
+
+export const CardServices = styled.div`
+  text-align: center;
+`
+
+const IconCSS = css`
+  width: 50px;
+  height: 50px;
+  color: ${({ theme }) => theme.pallete.primary.main};
+  margin-bottom: ${({ theme }) => theme.spacing.small};
+`
+
+export const FrontEndIcon = styled(LaptopCode)`
+  ${IconCSS}
+`
+
+export const BackendIcon = styled(CodeCurly)`
+  ${IconCSS}
+`
+
+export const CloudIcon = styled(Cloud)`
+  ${IconCSS}
+`
+
+export const CardServiceTitle = styled.h4`
+  ${({ theme }) => css`
+    font-size: ${theme.typography.sizes.large};
+    margin-bottom: ${theme.spacing.small};
+    font-weight: ${({ theme }) => theme.typography.titleFont.semiBold};
+    font-family: ${({ theme }) => theme.typography.titleFont.fontFamily};
+  `}
+`
+
+export const CardServiceText = styled.p`
+  ${({ theme }) => css`
+    font-size: ${theme.typography.sizes.normal};
+    margin-bottom: ${theme.spacing.small};
+    font-weight: ${({ theme }) => theme.typography.bodyFont.light};
+    font-family: ${({ theme }) => theme.typography.bodyFont.fontFamily};
+  `}
+`
+export const SubHeadingContent = styled.div`
+  margin-top: 70px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 `
