@@ -69,21 +69,21 @@ const About: React.FC = () => {
         </S.SubHeadingContent>
         <S.SectionContent>
           <S.CardServices>
-            <S.FrontEndIcon />
-            <S.CardServiceTitle>Frontend</S.CardServiceTitle>
-            <S.CardServiceText>
-              I develop frontend applications, from creating the layout with
-              HTML and CSS to integrating with the backend communicating via
-              API.
-            </S.CardServiceText>
-          </S.CardServices>
-          <S.CardServices>
             <S.BackendIcon />
             <S.CardServiceTitle>Backend</S.CardServiceTitle>
             <S.CardServiceText>
               I develop backend applications, and the whole process that it
               involves, such as integration with databases or external services,
               creation of routines and much more.
+            </S.CardServiceText>
+          </S.CardServices>
+          <S.CardServices>
+            <S.FrontEndIcon />
+            <S.CardServiceTitle>Frontend</S.CardServiceTitle>
+            <S.CardServiceText>
+              I develop frontend applications, from creating the layout with
+              HTML and CSS to integrating with the backend communicating via
+              API.
             </S.CardServiceText>
           </S.CardServices>
           <S.CardServices>

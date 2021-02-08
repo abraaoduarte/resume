@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+/*import styled from 'styled-components'
 import PageHeader from 'components/PageHeader'
 import { AddressCard } from 'styles/Icons'
 
@@ -246,3 +246,15 @@ const Home: React.FC = () => {
 }
 
 export default Home
+*/
+
+import { ResumeTemplate } from 'templates/Resume'
+
+const Resume: React.FC = () => {
+  return (
+    <>
+      <ResumeTemplate />
+    </>
+  )
+}
+export default Resume
