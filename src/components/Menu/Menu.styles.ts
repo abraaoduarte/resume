@@ -105,7 +105,8 @@ export const MenuLink = styled.a`
   text-align: left;
   padding-left: 40px;
   &:active,
-  &:hover {
+  &:hover,
+  &.active {
     cursor: pointer;
     color: ${({ theme }) => theme.pallete.primary.light};
   }

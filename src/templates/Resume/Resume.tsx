@@ -78,7 +78,7 @@ const Resume: React.FC = () => (
         <S.Timeline>
           <S.TimelineItem>
             <S.LineLeft />
-            <S.TimelineTitle>Bachelor of Information System</S.TimelineTitle>
+            <S.TimelineTitle>B.S in Information System</S.TimelineTitle>
             <S.TimelineSubTitle>UNIFRAN</S.TimelineSubTitle>
             <S.YearInfo>
               <S.YearTo>2014</S.YearTo>
@@ -87,11 +87,20 @@ const Resume: React.FC = () => (
           </S.TimelineItem>
           <S.TimelineItem>
             <S.LineLeft />
-            <S.TimelineTitle>Bachelor of Information System</S.TimelineTitle>
-            <S.TimelineSubTitle>UNIFRAN</S.TimelineSubTitle>
+            <S.TimelineTitle>TECHNICAL IN ADMINISTRATION</S.TimelineTitle>
+            <S.TimelineSubTitle>Etec dr. Júlio Cardoso</S.TimelineSubTitle>
             <S.YearInfo>
-              <S.YearTo>2014</S.YearTo>
-              <S.YearFrom>2011</S.YearFrom>
+              <S.YearTo>2010</S.YearTo>
+              <S.YearFrom>2009</S.YearFrom>
+            </S.YearInfo>
+          </S.TimelineItem>
+          <S.TimelineItem>
+            <S.LineLeft />
+            <S.TimelineTitle>high school degree</S.TimelineTitle>
+            <S.TimelineSubTitle>EE Torquato Caleiro</S.TimelineSubTitle>
+            <S.YearInfo>
+              <S.YearTo>2009</S.YearTo>
+              <S.YearFrom>2007</S.YearFrom>
             </S.YearInfo>
           </S.TimelineItem>
         </S.Timeline>
