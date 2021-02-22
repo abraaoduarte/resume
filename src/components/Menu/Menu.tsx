@@ -31,7 +31,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           <S.Menu role="navigation" aria-label="menu">
             <S.MenuItem>
               <Link href="/" passHref>
-                <S.MenuLink className={router.pathname === '/' && 'active'}>
+                <S.MenuLink className={router.pathname === '/' ? 'active' : ''}>
                   <S.HomeIcon />
                   <S.MenuText>Home</S.MenuText>
                 </S.MenuLink>
@@ -40,7 +40,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             <S.MenuItem>
               <Link href="/about" passHref>
                 <S.MenuLink
-                  className={router.pathname === '/about' && 'active'}
+                  className={router.pathname === '/about' ? 'active' : ''}
                 >
                   <S.UserIcon />
                   <S.MenuText>About me</S.MenuText>
@@ -50,7 +50,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             <S.MenuItem>
               <Link href="/resume" passHref>
                 <S.MenuLink
-                  className={router.pathname === '/resume' && 'active'}
+                  className={router.pathname === '/resume' ? 'active' : ''}
                 >
                   <S.ResumeIcon />
                   <S.MenuText>Resume</S.MenuText>
@@ -59,7 +59,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             </S.MenuItem>
             <S.MenuItem>
               <Link href="/blog" passHref>
-                <S.MenuLink className={router.pathname === '/blog' && 'active'}>
+                <S.MenuLink
+                  className={router.pathname === '/blog' ? 'active' : ''}
+                >
                   <S.BlogIcon />
                   <S.MenuText>Blog</S.MenuText>
                 </S.MenuLink>
@@ -68,7 +70,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             <S.MenuItem>
               <Link href="/contact" passHref>
                 <S.MenuLink
-                  className={router.pathname === '/contact' && 'active'}
+                  className={router.pathname === '/contact' ? 'active' : ''}
                 >
                   <S.ContactIcon />
                   <S.MenuText>Contact</S.MenuText>
