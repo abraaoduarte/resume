@@ -105,11 +105,76 @@ const Resume: React.FC = () => (
           </S.TimelineItem>
         </S.Timeline>
       </S.Content>
-
-      <S.Content>
-        <SubHeading title="CODING SKILLS" />
-      </S.Content>
     </S.Container>
+    <S.Content fullWidth>
+      <SubHeading title="CODING SKILLS" />
+    </S.Content>
+    <S.ContentSkill>
+      <S.SkillItem>
+        <S.SkillText>Javascript/Typescript</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={90}>
+            <S.SkillProgressBarValue>90%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>React/Nextjs</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={90}>
+            <S.SkillProgressBarValue>90%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>Node</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={90}>
+            <S.SkillProgressBarValue>90%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>MySql/Postgres/MongoDb</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={80}>
+            <S.SkillProgressBarValue>80%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>CSS</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={85}>
+            <S.SkillProgressBarValue>85%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>HTML</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={85}>
+            <S.SkillProgressBarValue>85%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>PHP</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={60}>
+            <S.SkillProgressBarValue>60%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+      <S.SkillItem>
+        <S.SkillText>Python</S.SkillText>
+        <S.SkillProgress>
+          <S.SkillProgressBar progressValue={50}>
+            <S.SkillProgressBarValue>50%</S.SkillProgressBarValue>
+          </S.SkillProgressBar>
+        </S.SkillProgress>
+      </S.SkillItem>
+    </S.ContentSkill>
   </Base>
 )
 

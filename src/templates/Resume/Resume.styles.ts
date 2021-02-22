@@ -9,8 +9,21 @@ export const Container = styled.div`
   `}
 `
 
-export const Content = styled.div`
-  text-align: center;
+type ContentProps = {
+  fullWidth?: boolean
+}
+const ContentModifiers = {
+  fullWidth: () => css`
+    width: 100%;
+    display: block;
+  `
+}
+
+export const Content = styled.div<ContentProps>`
+  ${({ fullWidth = false }) => css`
+    text-align: center;
+    ${!!fullWidth && ContentModifiers.fullWidth}
+  `}
 `
 
 export const Timeline = styled.ul`
@@ -115,4 +128,90 @@ export const YearFrom = styled.span`
   color: #fff;
   position: absolute;
   bottom: -18px;
+`
+
+export const ContentSkill = styled.ul`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacing.xxxlarge};
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  `}
+`
+export const SkillItem = styled.li`
+  ${({ theme }) => css`
+    padding: 0 ${theme.spacing.large};
+    position: relative;
+    flex-basis: 100%;
+  `}
+  ${media.greaterThan('medium')`
+    flex-basis: 50%;
+  `}
+`
+export const SkillText = styled.h4`
+  ${({ theme }) => css`
+    font-size: ${theme.typography.sizes.medium};
+    font-weight: ${theme.typography.titleFont.light};
+    margin: 0 0 ${theme.spacing.medium};
+    text-transform: uppercase;
+    font-family: ${theme.typography.titleFont.fontFamily};
+  `}
+`
+
+export const SkillProgress = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    font-size: ${theme.spacing.small};
+    height: ${theme.spacing.small};
+    width: 100%;
+    background-color: #404144;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: ${theme.spacing.large};
+    overflow: visible;
+  `}
+`
+
+type SkillProgressBarProps = {
+  progressValue?: number
+}
+
+export const SkillProgressBar = styled.div<SkillProgressBarProps>`
+  ${({ theme, progressValue = 100 }) => css`
+    background-color: ${theme.pallete.primary.main};
+    width: ${`${progressValue}%`};
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    &::after {
+      content: '';
+      box-sizing: border-box;
+      display: block;
+      border: 15px solid transparent;
+      border-bottom: 21px solid transparent;
+      border-bottom-color: ${theme.pallete.primary.main};
+      position: absolute;
+      top: -28px;
+      right: -12px;
+    }
+  `}
+`
+
+export const SkillProgressBarValue = styled.div`
+  ${({ theme }) => css`
+    font-size: ${theme.typography.sizes.medium};
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: -36px;
+    right: 0;
+  `}
 `
