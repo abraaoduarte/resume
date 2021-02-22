@@ -10,7 +10,7 @@
     "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "next": "10.0.6",
+    "next": "10.0.7",
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
