@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^17.0.9",
+    "@types/react": "^17.0.14",
     "@typescript-eslint/parser": "^4.28.2",
     "@types/node": "^15.12.1",
     "@types/styled-components": "^5.1.11",
