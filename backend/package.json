@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Abraão Duarte",
+    "email": "abraao.n.duarte@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/abraaoduarte/resume/issues"
+  },
+  "repository": {
+    "url": "https://github.com/abraaoduarte/resume.git",
+    "type": "git"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/app.ts' -e ts",
+    "start:prod": "node dist/app.js",
+    "build": "tsc",
+    "lint": ""
+  }
+}
