@@ -40,6 +40,7 @@
     "graphql-playground-middleware-koa": "^1.6.22",
     "koa": "^2.13.4",
     "koa-graphql": "^0.12.0",
-    "koa-router": "^10.1.1"
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.1.3"
   }
 }
