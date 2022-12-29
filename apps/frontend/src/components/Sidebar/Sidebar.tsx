@@ -3,9 +3,11 @@ import { FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Sidebar = () => {
   return (
-    <div className="max-w-sm bg-[#444] w-full rounded-l-3xl flex flex-col justify-between items-center invisible lg:visible">
+    <div className="h-full overflow-y-auto max-w-sm w-full rounded-l-3xl flex-col justify-between items-center hidden lg:flex">
       <div className="flex items-center flex-col">
-        <Avatar />
+        <div className="mt-20 h-44 w-44">
+          <Avatar />
+        </div>
         <h1 className="text-4xl font-semibold	text-[#f5f5f5] mt-5 font-Poppins">
           Abraão Duarte
         </h1>

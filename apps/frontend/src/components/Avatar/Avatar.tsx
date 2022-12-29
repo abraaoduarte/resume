@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const Avatar = () => {
   return (
-    <div className="w-44 relative mt-20 h-44">
+    <div className="w-full h-full relative">
       <Image
         fill
         className="rounded-full border-4 border-white"
