@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react';
 import { Avatar } from 'components/Avatar';
 import { FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa';
 import useComponentVisible from 'hooks/useComponentVisible';
+import Link from 'next/link';
 
 export const NavbarMobile = () => {
   const { ref, visible, handleClick, refButton } = useComponentVisible(false);
@@ -35,7 +36,7 @@ export const NavbarMobile = () => {
         </div>
       </button>
       <Transition.Root show={visible} as={Fragment}>
-        <div className="relative z-10">
+        <div className="relative z-10 lg:hidden">
           <div className="fixed inset-0" />
 
           <div className="fixed inset-0 overflow-hidden">
@@ -66,24 +67,24 @@ export const NavbarMobile = () => {
                       </h2>
                     </div>
                     <nav className="mt-6 flex flex-col w-full items-center">
-                      <a href="#about" className="py-3 text-white text-base">
+                      <Link href="/" className="py-3 text-white text-base">
                         Home
-                      </a>
-                      <a href="#" className="py-3 text-white text-base">
+                      </Link>
+                      <Link href="/about" className="py-3 text-white text-base">
                         About me
-                      </a>
-                      <a href="#" className="py-3 text-white text-base">
+                      </Link>
+                      <Link href="#" className="py-3 text-white text-base">
                         Resume
-                      </a>
-                      <a href="#" className="py-3 text-white text-base">
+                      </Link>
+                      <Link href="#" className="py-3 text-white text-base">
                         Portfolio
-                      </a>
-                      <a href="#" className="py-3 text-white text-base">
+                      </Link>
+                      <Link href="#" className="py-3 text-white text-base">
                         Blog
-                      </a>
-                      <a href="#" className="py-3 text-white text-base">
+                      </Link>
+                      <Link href="#" className="py-3 text-white text-base">
                         Contact
-                      </a>
+                      </Link>
                     </nav>
                     <div className="flex items-center justify-center w-full my-6">
                       <a

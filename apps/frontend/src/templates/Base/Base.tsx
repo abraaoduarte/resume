@@ -14,7 +14,7 @@ export const BaseTemplate: FC<BaseTemplateProps> = ({ children }) => {
       <div className="flex h-screen w-screen lg:w-11/12 xl:w-10/12 lg:h-5/6">
         <div className="w-full bg-[#222] lg:bg-[#444] flex lg:rounded-[35px]">
           <Sidebar />
-          <div className="bg-[#222] w-full lg:rounded-[35px] p-8">
+          <div className="bg-[#222] w-full lg:rounded-[35px] p-14 overflow-y-auto">
             {children}
           </div>
         </div>
