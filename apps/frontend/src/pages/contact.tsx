@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>About</title>
+        <title>Contact me</title>
       </Head>
       <ContactTemplate />
     </div>

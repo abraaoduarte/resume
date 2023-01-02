@@ -17,73 +17,51 @@ export const ResumeTemplate = () => {
               Education
             </h2>
           </div>
+
           <ol className="relative border-l border-gray-200 dark:border-gray-700">
             <li className="mb-10 ml-6">
               <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
                 <span className="h-2 w-2 bg-[#222] rounded-full"></span>
               </span>
               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Application UI v2.0.0{' '}
-                <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                  Latest
-                </span>
+                Information systems (Bachelor´s degree)
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on January 13th, 2022
+                UNIFRAN (2011-2014)
               </time>
               <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                Get access to over 20+ pages including a dashboard layout,
-                charts, kanban board, calendar, and pre-order E-commerce &
-                Marketing pages.
+                The Bachelor's Degree in Information Systems provides good
+                mathematical training and solid training in computing, mainly
+                programming techniques and methodologies to develop these
+                systems. In addition, it provides strong business training, a
+                vision of organizational dynamics, basic knowledge of
+                legislation and entrepreneurship. The course offers academic
+                majors in three areas: Decision Support Systems; Network
+                Management; and Web Application Engineering. The objective of
+                these majors is to study subjects in depth that are seen
+                throughout the course, providing students with valuable specific
+                knowledge for their professional life.
               </p>
-              <a
-                href="#"
-                className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              >
-                <svg
-                  className="mr-2 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>{' '}
-                Download ZIP
-              </a>
             </li>
             <li className="mb-10 ml-6">
               <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
                 <span className="h-2 w-2 bg-[#222] rounded-full"></span>
               </span>
               <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Figma v1.3.0
+                Administration Technician
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 7th, 2021
+                ETEC dr. Júlio Cardoso (2009-2010)
               </time>
               <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                All of the pages and components are first designed in Figma and
-                we keep a parity between the two versions even as we update the
-                project.
-              </p>
-            </li>
-            <li className="ml-6">
-              <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
-                <span className="h-2 w-2 bg-[#222] rounded-full"></span>
-              </span>
-              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Library v1.2.2
-              </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 2nd, 2021
-              </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements built on top of Tailwind CSS.
+                The Administration Technician is the professional who controls
+                the administrative routine of companies. Collaborates in
+                strategic, tactical and operational planning. It carries out
+                activities in human resources and mediates labor for job
+                placement and outplacement. Operates in the purchasing area;
+                assists in the accounting sector and advises the Sales area. It
+                exchanges goods and services and performs activities in the
+                fiscal and financial areas.
               </p>
             </li>
           </ol>
@@ -98,68 +76,146 @@ export const ResumeTemplate = () => {
                 <span className="h-2 w-2 bg-[#222] rounded-full"></span>
               </span>
               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Application UI v2.0.0{' '}
-                <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                  Latest
-                </span>
+                Software Developer at Kellton Tech
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on January 13th, 2022
+                08/2021 - Current
               </time>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                Get access to over 20+ pages including a dashboard layout,
-                charts, kanban board, calendar, and pre-order E-commerce &
-                Marketing pages.
+              <p className="mb-4 text-base font-normal text-gray-400">
+                Kellton is a “Born Digital” technology consulting and IT
+                services company that delivers innovative solutions and
+                exceptional business value.
               </p>
-              <a
-                href="#"
-                className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              >
-                <svg
-                  className="mr-2 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>{' '}
-                Download ZIP
-              </a>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                Technologies:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Node</li>
+                <li>✓ Typescript</li>
+                <li>✓ React/React Native/VueJS</li>
+                <li>✓ Firebase</li>
+              </ul>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                I had the following assignments:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Maintenance in the various systems and microservices</li>
+                <li>✓ Creation of new products</li>
+                <li>✓ Implementation of new features</li>
+              </ul>
             </li>
             <li className="mb-10 ml-6">
               <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
                 <span className="h-2 w-2 bg-[#222] rounded-full"></span>
               </span>
-              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Figma v1.3.0
+              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Software Developer at Editora Globo
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 7th, 2021
+                01/2020 - 07/2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                All of the pages and components are first designed in Figma and
-                we keep a parity between the two versions even as we update the
-                project.
+              <p className="mb-4 text-base font-normal text-gray-400">
+                Editora Globo is a company that is part of the Globo group and
+                has dozens of products with a large amount of access. I work as
+                a software developer, and I am part of the team that takes care
+                of more than 15 magazines in the company.
               </p>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                Technologies:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Node</li>
+                <li>✓ Typescript</li>
+                <li>✓ Python</li>
+                <li>✓ MySql</li>
+                <li>✓ React/Nextjs</li>
+              </ul>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                I had the following assignments:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Maintenance in the various systems and microservices</li>
+                <li>✓ Creation of new products</li>
+                <li>✓ Implementation of new features</li>
+                <li>✓ Creation of routines in python for data migration.</li>
+              </ul>
             </li>
-            <li className="ml-6">
+            <li className="mb-10 ml-6">
               <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
                 <span className="h-2 w-2 bg-[#222] rounded-full"></span>
               </span>
-              <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                Flowbite Library v1.2.2
+              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Software Developer at MazzaTech
               </h3>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Released on December 2nd, 2021
+                02/2018 - 12/2020
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements built on top of Tailwind CSS.
+              <p className="mb-4 text-base font-normal text-gray-400">
+                MazzaFC is a software factory, so I had the opportunity to
+                create projects from scratch and have contact with various
+                technologies.
               </p>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                Technologies:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Node/Express</li>
+                <li>✓ PHP/Laravel</li>
+                <li>✓ MySql/Postgres/MongoDB</li>
+                <li>✓ React/React Native</li>
+                <li>✓ AWS/SQS</li>
+              </ul>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                I had the following assignments:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Creation of MySql procedures for data migration.</li>
+                <li>✓ Participation in requirements gathering meetings</li>
+                <li>✓ Customer support</li>
+                <li>✓ Creation of new products</li>
+                <li>✓ Maintenance on existing systems</li>
+              </ul>
+            </li>
+            <li className="mb-10 ml-6">
+              <span className="flex absolute -left-2 justify-center items-center w-4 h-4 bg-[#0ba376] rounded-full ring-4 ring-[#0ba376] ring-opacity-25">
+                <span className="h-2 w-2 bg-[#222] rounded-full"></span>
+              </span>
+              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                Software Developer at Flag Brasil
+              </h3>
+              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                03/2014 - 01/2018
+              </time>
+              <p className="mb-4 text-base font-normal text-gray-400">
+                I worked on internals and externals products where I got my
+                first job as software developer.
+              </p>
+              <p className="mb-4 text-base font-normal text-gray-400">
+                My responsibilities were to implement new systems, evolve
+                existing systems, create websites, deployment and give support
+                to clients.
+              </p>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                Technologies:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ PHP</li>
+                <li>✓ MySql</li>
+                <li>✓ CSS</li>
+                <li>✓ HTML</li>
+              </ul>
+              <p className="mb-2 font-semibold text-base font-Poppins text-gray-400">
+                I had the following assignments:
+              </p>
+              <ul className="text-base font-normal text-gray-400 mb-4">
+                <li>✓ Development and maintenance of internal systems</li>
+                <li>
+                  ✓ Participation in the development and implementation of ERP
+                  for Church Management
+                </li>
+                <li>✓ Database analysis and modeling.</li>
+                <li>✓ Website development and maintenance</li>
+              </ul>
             </li>
           </ol>
         </div>
