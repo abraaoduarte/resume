@@ -23,7 +23,7 @@ export const Navbar = () => {
           {/* <span className="absolute z-10 w-auto">Home</span> */}
         </Link>
         <Link
-          href="#"
+          href="/resume"
           className="text-white hover:text-[#0ba376] relative mb-6"
         >
           <SlGraduation size={30} />

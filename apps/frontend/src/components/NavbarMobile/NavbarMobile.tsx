@@ -73,7 +73,10 @@ export const NavbarMobile = () => {
                       <Link href="/about" className="py-3 text-white text-base">
                         About me
                       </Link>
-                      <Link href="#" className="py-3 text-white text-base">
+                      <Link
+                        href="/resume"
+                        className="py-3 text-white text-base"
+                      >
                         Resume
                       </Link>
                       <Link href="#" className="py-3 text-white text-base">
