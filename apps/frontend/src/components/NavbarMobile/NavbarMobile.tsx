@@ -79,13 +79,16 @@ export const NavbarMobile = () => {
                       >
                         Resume
                       </Link>
-                      <Link href="#" className="py-3 text-white text-base">
+                      {/* <Link href="#" className="py-3 text-white text-base">
                         Portfolio
                       </Link>
                       <Link href="#" className="py-3 text-white text-base">
                         Blog
-                      </Link>
-                      <Link href="#" className="py-3 text-white text-base">
+                      </Link> */}
+                      <Link
+                        href="/contact"
+                        className="py-3 text-white text-base"
+                      >
                         Contact
                       </Link>
                     </nav>
