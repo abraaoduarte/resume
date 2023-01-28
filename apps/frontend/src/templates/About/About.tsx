@@ -1,72 +1,61 @@
+import { Title } from 'components/Title';
 import { BaseTemplate } from 'templates/Base';
 
+const PERSONAL_INFORMATIONS = {
+  age: (age: number) => age,
+  residente: 'Brazil',
+  email: 'abraao.n.duarte@gmail.com',
+  phone: '+55 (16) 98824-5113',
+};
+
 export const AboutTemplate = () => {
+  const calculateAge = () => {
+    const diff = Date.now() - new Date(1992, 1, 6).getTime();
+    const age = new Date(diff);
+
+    return Math.abs(age.getUTCFullYear() - 1970);
+  };
+
   return (
     <BaseTemplate>
-      <div className="relative pb-3.5	mb-7 pr-6 inline-block after:absolute after:opacity-40 after:top-2.5 after:right-0 after:h-8 after:w-12 after:bg-[length:6px_6px] after:bg-gradient-green-dotted">
-        <h1 className="text-3xl	text-white font-Poppins font-semibold mb-2">
-          About <span className="text-[#0ba376]">Me</span>
-        </h1>
-      </div>
+      <Title title="About" secondaryText="Me" level="h1" size="text-3xl" />
       <div className="flex mb-14 flex-col md:flex-row">
         <div className="flex-initial md:w-7/12 pr-6">
           <p className="text-[#d5d5d5] text-base font-Poppins">
-            Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue
-            elit vel odio suscipit, sit amet tempor nisl imperdiet. Quisque ex
-            justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae
-            hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum
-            condimentum dictum et vel massa. Ut in imperdiet dolor, vel
-            consectetur dui.
+            My name is Abraão, I am graduated in Information System. I&apos;ve
+            been working as a Software Developer since 2015. <br />
           </p>
         </div>
         <div className="flex-initial ">
           <ul>
-            <li className="mb-4">
-              <span className="text-[#0ba376] mr-3 font-semibold font-Poppins">
-                Age
-              </span>
-              <span className="text-[#d5d5d5] text-base font-Poppins">31</span>
-            </li>
-            <li className="mb-4">
-              <span className="text-[#0ba376] mr-3 font-semibold font-Poppins">
-                Residence
-              </span>
-              <span className="text-[#d5d5d5] text-base font-Poppins">
-                Brazil
-              </span>
-            </li>
-            <li className="mb-4">
-              <span className="text-[#0ba376] mr-3 font-semibold font-Poppins">
-                Email
-              </span>
-              <span className="text-[#d5d5d5] text-base font-Poppins">
-                abraao.n.duarte@gmail.com
-              </span>
-            </li>
-            <li className="mb-4">
-              <span className="text-[#0ba376] mr-3 font-semibold font-Poppins">
-                Phone
-              </span>
-              <span className="text-[#d5d5d5] text-base font-Poppins">
-                +55 (16) 98824-5113
-              </span>
-            </li>
+            {Object.values(PERSONAL_INFORMATIONS).map((value, index) => (
+              <li className="mb-4" key={index}>
+                <span className="text-[#0ba376] mr-3 font-semibold font-Poppins capitalize">
+                  {Object.keys(PERSONAL_INFORMATIONS)[index]}
+                </span>
+                <span className="text-[#d5d5d5] text-base font-Poppins">
+                  {typeof value === 'function' ? value(calculateAge()) : value}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
-      <div className="relative pb-3.5	mb-4 pr-6 inline-block after:absolute after:opacity-40 after:top-2.5 after:right-0 after:h-8 after:w-12 after:bg-[length:6px_6px] after:bg-gradient-green-dotted">
-        <h1 className="text-3xl	text-white font-Poppins font-semibold mb-2">
-          What <span className="text-[#0ba376]">I do</span>
-        </h1>
-      </div>
+      <Title title="What" secondaryText="I do" level="h2" size="text-3xl" />
       <div className="">
         <p className="text-[#d5d5d5] text-base font-Poppins">
-          Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue
-          elit vel odio suscipit, sit amet tempor nisl imperdiet. Quisque ex
-          justo, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae
-          hendrerit dolor, eget imperdiet mauris. Maecenas et ante id ipsum
-          condimentum dictum et vel massa. Ut in imperdiet dolor, vel
-          consectetur dui.
+          I love to code new projects to expand my knowledge and skills, I like
+          to share knowledge with people and help them. Likewise, I like to
+          study about clean code, design patterns and best practices. <br />
+          <br />
+          Something that I value is working with teams that help each other and
+          is always searching evolving. <br />
+          <br />
+          In my current moment, I&apos;m working as fullstack developer, working
+          with Node | Typescript | React | Nextjs and Python. <br />
+          <br />
+          In my free time I like to cycling, play soccer, watch series and
+          building stuffs with code.
         </p>
       </div>
     </BaseTemplate>
